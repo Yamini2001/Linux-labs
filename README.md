@@ -21,7 +21,7 @@ You don't need a full Linux OS to run the script in this repository. You can use
 ---
 
 ## 🛠️ Useful Linux Commands (My Practice Cheat Sheet)
-Here are the essential commands I am practicing to navigate and control the Linux terminal:
+Here are the essential commands I am practising to navigate and control the Linux terminal:
 
 ### 📁 File & Directory Navigation
 * `pwd` — **Print Working Directory.** Shows exactly which folder you are currently inside.
