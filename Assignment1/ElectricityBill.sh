@@ -1,25 +1,22 @@
 #  Calculate the electricity bill to consumed light
 #|bin/Bash
 
-read -p "Enter the units consumed: " units
+#!/bin/bash
 
-if [ $units -le 100 ];
-then
-   echo "Two rupees per unit"
-   total=$(($units*2))
-   echo "Total unit consumed: $total"
-elif [ $units -le 200 ];
-then 
-   echo "Three rupees per unit"
-   total=$(($units*3))
-   echo "$total"
-elif [ $units -le 300 ];
-then 
-   echo "Five rupees per unit"
-   total=$(($units*5))
-   echo "$total"
+read -p "Enter total units consumed: " units
+
+if [ "$units" -le 100 ]; then
+    bill=$((units * 2))
+
+elif [ "$units" -le 200 ]; then
+    bill=$((100 * 2 + (units - 100) * 3))
+
+elif [ "$units" -le 300 ]; then
+    bill=$((100 * 2 + 100 * 3 + (units - 200) * 5))
+
 else
-   echo "Seven rupees per unit"
-   total=$(($units*7))
-   echo "$total"
+    bill=$((100 * 2 + 100 * 3 + 100 * 5 + (units - 300) * 7))
 fi
+
+echo "Total units consumed = $units"
+echo "Electricity bill = ₹$bill"
