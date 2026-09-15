@@ -1,4 +1,5 @@
 # Check the number is positve or not 
+
 #!bin/Bash
 
 read -p "Enter the number: " number
