@@ -55,5 +55,5 @@ As I practice Linux, I discovered some incredible facts about it:
 ## 🎯 My Goals
 * [x] Learn basic syntax and fix variable assignment errors.
 * [x] Successfully push a project to GitHub from Windows using Git Bash.
-* [ ] Learn how to use loops (`for`, `while`) in Bash scripting.
-* [ ] Master advanced Linux text editing tools like `nano` or `vim`.
+* [x] Learn how to use loops (`for`, `while`) in Bash scripting.
+* [x] Master advanced Linux text editing tools like `nano` or `vim`.
